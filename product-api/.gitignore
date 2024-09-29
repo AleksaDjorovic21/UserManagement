@@ -9,3 +9,11 @@
 # System files
 .DS_Store
 Thumbs.db
+
+# .Net
+**/bin/
+**/obj/
+
+# Visual Studio
+**/.vs/
+**/*.user

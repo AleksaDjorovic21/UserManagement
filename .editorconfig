@@ -1,21 +1,3 @@
-<<<<<<< HEAD
-# Editor configuration, see https://editorconfig.org
-root = true
-
-[*]
-charset = utf-8
-indent_style = space
-indent_size = 2
-insert_final_newline = true
-trim_trailing_whitespace = true
-
-[*.ts]
-quote_type = single
-
-[*.md]
-max_line_length = off
-trim_trailing_whitespace = false
-=======
 # Root level configuration
 root = true
 
@@ -81,4 +63,3 @@ csharp_new_line_before_catch = true
 csharp_new_line_between_query_expression_clauses = true
 csharp_new_line_between_query_expression_clauses_multiple = true
 csharp_space_before_empty_parameter_list_parentheses = false
->>>>>>> dfe82d845dbfe7088f471e6d16cb17b473a6a8de
