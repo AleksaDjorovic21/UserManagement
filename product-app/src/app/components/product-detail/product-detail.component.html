@@ -1,0 +1,10 @@
+<h2>Product Details</h2>
+<div *ngIf="product">
+  <h3>{{ product.name }}</h3>
+  <p>Price: {{ product.price | currency }}</p>
+  <p>Description: {{ product.description }}</p>
+
+   <!-- Admin-only actions -->
+  <button *ngIf="isAdmin" (click)="deleteProduct()">Delete</button>
+  <a *ngIf="isAdmin" [routerLink]="['/products/edit', product.id]">Edit</a>
+</div>

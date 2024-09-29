@@ -1,0 +1,25 @@
+<div class="product-list">
+  <h2>Product List</h2>
+  <button type="button" (click)="openCreateProductForm()" *ngIf="isAdmin" class="admin-button">Create Product</button>
+  <button type="button" (click)="navigateToAssignRole()" *ngIf="isAdmin" class="admin-button">Assign Role</button>
+  <div *ngIf="products.length === 0" class="no-products">No products found.</div>
+  <div *ngFor="let product of products" class="product-item">
+    <h3 class="product-title">{{ product.name }}</h3>
+    <p class="product-price">{{ product.price | currency }}</p>
+    <button (click)="toggleDescription(product)">
+      {{ product.showDescription ? 'Show Less' : 'Show More' }}
+    </button>
+    <div *ngIf="product.showDescription" class="product-description">
+      <p>Description: {{ product.description }}</p>
+    </div>
+
+    <!-- Admin-only buttons -->
+    <div class="admin-buttons" *ngIf="isAdmin">
+      <button (click)="editProduct(product.id)">Edit</button>
+      <button (click)="deleteProduct(product.id)">Delete</button>
+    </div>
+</div>
+
+
+
+
