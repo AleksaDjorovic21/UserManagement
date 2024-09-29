@@ -1,0 +1,20 @@
+<div class="assign-role">
+  <h2>Assign Admin Role</h2>
+  <table *ngIf="users.length > 0">
+      <tr>
+          <th>User ID</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Action</th>
+      </tr>
+      <tr *ngFor="let user of users">
+          <td>{{ user.id }}</td>
+          <td>{{ user.firstName }}</td>
+          <td>{{ user.lastName }}</td>
+          <td>
+              <button (click)="assignRole(user.id)">Assign Admin Role</button>
+          </td>
+      </tr>
+  </table>
+  <div *ngIf="filteredUsers.length === 0" class="no-users">No users found.</div>
+</div>
