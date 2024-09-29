@@ -3,6 +3,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { BehaviorSubject, Observable, tap } from 'rxjs';
 import { Login } from '../../models/login.model';
 import { Register } from '../../models/register.model';
+import { User } from '../../models/user.model';
 
 @Injectable({
   providedIn: 'root'
@@ -48,10 +49,19 @@ export class AuthService {
     return !!localStorage.getItem('user');
   }
 
-  getAllUsers(): Observable<any> {
-    return this.http.get(`${this.baseUrl}Admin/users`);
+  getAllUsers(): Observable<User[]> {
+    const user = localStorage.getItem('user');
+    let token = '';
+  
+    if (user) {
+      const parsedUser = JSON.parse(user);
+      token = parsedUser.token; 
+    }
+  
+    const headers = new HttpHeaders().set('Authorization', `Bearer ${token}`);
+    return this.http.get<User[]>(`${this.baseUrl}Admin/users`, { headers });
   }
-
+  
   assignAdminRole(userId: string): Observable<string> {
     return this.http.post(`${this.baseUrl}Admin/assign-admin-role/${userId}`, {}, { responseType: 'text' });
   }

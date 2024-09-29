@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../../services/auth.service';
 import { CommonModule } from '@angular/common';
-import { User } from '../../../models/user.model';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
@@ -24,18 +23,21 @@ export class AssignRoleComponent implements OnInit {
   }
 
   fetchUsers() {
-    this.loading = true; 
     this.authService.getAllUsers().subscribe(
-        (data: User[]) => {
-            this.users = data;
-            this.filteredUsers = this.users.filter(user => user.role !== 'Admin');
-            this.loading = false; 
-        },
-        (error: any) => {
-            console.error('Error fetching users', error);
-            alert('Could not fetch users. Please try again later.');
-            this.loading = false; 
+      (users) => {
+        this.users = users;
+      },
+      (error) => {
+        if (error.status === 401) {
+          console.error('Unauthorized access. Redirecting to login.');
+          // Optionally redirect to login or show a message
+        } else if (error.status === 403) {
+          console.error('Forbidden access. You do not have permission to view users.');
+          // Handle forbidden error
+        } else {
+          console.error('Error fetching users', error);
         }
+      }
     );
   }
   

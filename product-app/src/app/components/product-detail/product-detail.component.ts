@@ -18,7 +18,7 @@ export class ProductDetailComponent implements OnInit {
   constructor(
     private productService: ProductService,
     private route: ActivatedRoute,
-    private router: Router,
+    protected router: Router,
     private authService: AuthService 
   ) {}
 

@@ -6,7 +6,6 @@ namespace ProductApp.Api.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]
-[Authorize(Roles = "Admin")] 
 public class AdminController(IAdminRepository adminRepository) 
     : ControllerBase
 {

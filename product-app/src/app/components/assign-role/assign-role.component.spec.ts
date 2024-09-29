@@ -1,5 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { AssignRoleComponent } from './assign-role.component';
+import { HttpClientTestingModule } from '@angular/common/http/testing'; 
+import { AuthService } from '../../services/auth.service';
 
 describe('AssignRoleComponent', () => {
   let component: AssignRoleComponent;
@@ -7,7 +9,8 @@ describe('AssignRoleComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AssignRoleComponent]
+      imports: [AssignRoleComponent, HttpClientTestingModule], 
+      providers: [AuthService], 
     })
     .compileComponents();
 
@@ -20,3 +23,5 @@ describe('AssignRoleComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+
+

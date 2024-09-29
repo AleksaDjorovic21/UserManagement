@@ -1,96 +1,110 @@
-<<<<<<< HEAD
-# ProductApp
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.2.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
-=======
 # Product Management App
 
-A simple ASP.NET Core web application for managing products with user authentication and role-based access control.
+The Product Management App is a full-featured web application built using ASP.NET Core on the backend and Angular for the frontend. The application allows for comprehensive product management, user authentication, and role-based access control.
 
 ## Table of Contents
 
 1. [Prerequisites](#prerequisites)
 2. [Installation](#installation)
 3. [Configuration](#configuration)
-4. [Running the Application](#running-the-application)
-5. [Usage](#usage)
-6. [Role Information](#role-information)
-7. [Database Migrations](#database-migrations)
+4. [Database Migrations](#database-migrations)
+5. [Running the Application](#running-the-application)
+6. [Usage](#usage)
+7. [Role Information](#role-information)
 8. [Testing](#testing)
-
 
 ## Prerequisites
 
 Before you begin, ensure you have the following installed on your machine:
 
-- [.NET 6.0 SDK]
+Angular:
+- [Angular 18]
+- [Node.js] - Ensure you have Node.js installed. If not, you can download it from `https://nodejs.org/`
+- [Angular CLI]
+
+C# .Net:
+- [.NET 8.0 SDK]
 - [SQL Server]
-- [Visual Studio 2022]
+- [Visual Studio 2022] //edit
 
 ## Installation
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
-   cd ProductManagementApp
+   git clone https://github.com/AleksaDjorovic21/UserManagement.git
+   cd UserManagement
    ```
 
-2. Restore the packages:
+2. Restore the packages for C# .Net:
    ```bash
    dotnet restore
    ```
 
-3. If you are using Visual Studio, open the solution file (`ProductManagementApp.sln`) directly.
+3. Install the packages for Angular:
+   ```bash
+   npm install -g @angular/cli
+   ```
+
+4. If you are using Visual Studio Code or Visual Studio 2022, open the solution file (`ProductApp.sln`).
 
 ## Configuration
 
 1. **Database Connection:**
-   - Open `appsettings.json` and set up the database connection:
+   - Open `appsettings.json` in `ProductApi.Api` and set up the database connection:
    ```json
    "ConnectionStrings": {
-       "DefaultConnection": "Server=(localdb)\mssqllocaldb;Database=ProductAppDb;Trusted_Connection=True;MultipleActiveResultSets=true"
+       "DefaultConnection": "Server=<YOUR_SQLSERVER_HOST>;Database=ProductAppDb;Trusted_Connection=True;MultipleActiveResultSets=true;TrustServerCertificate=True"
    }
    ```
    - Ensure that the connection string matches your SQL Server configuration.
 
 2. **Identity Settings:**
-   - The application uses ASP.NET Identity for user authentication. You may customize settings in the `Program.cs` if needed.
+   - The application uses ASP.NET Identity for user authentication. You may customize settings in the `Program.cs` if needed. 
+
+## Database Migrations 
+
+To apply the database migrations and create the necessary tables, follow these steps:
+
+1. Open your terminal and navigate to the `product-app/src/ProductApp.Infrastructure` directory.
+
+2. Run the following command:
+   ```bash
+   dotnet ef migrations add InitialCreate
+   ```
+
+   ```bash
+   dotnet ef database update
+   ```
+
+This command will create the database and apply all the migrations defined in your application.
 
 ## Running the Application
 
-To run the application, execute the following command in your terminal:
+To run the C# .Net part of the application, open your terminal and navigate to the `product-app/ProductApp.Api` directory.
+Than execute the following command in your terminal:
+```bash
+dotnet build
+```
+
 ```bash
 dotnet run
+```
+
+To run the Angular part of the application, open your terminal and navigate to the `product-app` directory.
+Than execute the following command in your terminal:
+
+```bash
+ng build
+```
+
+```bash
+ng serve
 ```
 
 ## Usage
 
 1. **Access the Application:**
-   - Open your web browser and navigate to `http://localhost:5099`.
+   - Open your web browser and navigate to `http://localhost:4200`. 
    
 2. **Registration and Login:**
    - Use the registration form to create a new user account.
@@ -98,8 +112,8 @@ dotnet run
 
 3. **Product Management:**
    - As an Admin user, you can create, edit, and delete products.
+   - Admin user have a feature to give permission to a users and manage products.
    - Regular users can only view the list of products.
-   - Also Admin user have a feature to give permission to a users.
 
 ## Role Information
 
@@ -114,24 +128,19 @@ The application utilizes role-based access control. The defined roles are:
 - **User:**
   - Can only view the list of products.
 
-## Database Migrations
-
-To apply the database migrations and create the necessary tables, follow these steps:
-
-1. Open your terminal and navigate to the project directory.
-2. Run the following command:
-   ```bash
-   dotnet ef database update
-   ```
-
-This command will create the database and apply all the migrations defined in your application.
-
 ## Testing
 
-To run the unit tests for the application, execute the following command in the test project directory:
+To run the C# .Net tests, open your terminal and navigate to the `product-api` directory.
+Than execute the following command in your terminal:
+
 ```bash
 dotnet test
 ```
 
+To run Angular tests, open your terminal and navigate to the `product-app` directory.
+Than execute the following command in your terminal:
 
->>>>>>> dfe82d845dbfe7088f471e6d16cb17b473a6a8de
+```bash
+ng test
+```
+
