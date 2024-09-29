@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\aleks\\Source\\ProductApp\\src\\ProductApp.Api\\ProductApp.Api.csproj": {}
+    "C:\\Users\\aleks\\Source\\UserManagement\\src\\ProductApp.Api\\ProductApp.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\aleks\\Source\\ProductApp\\src\\ProductApp.Api\\ProductApp.Api.csproj": {
+    "C:\\Users\\aleks\\Source\\UserManagement\\src\\ProductApp.Api\\ProductApp.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aleks\\Source\\ProductApp\\src\\ProductApp.Api\\ProductApp.Api.csproj",
+        "projectUniqueName": "C:\\Users\\aleks\\Source\\UserManagement\\src\\ProductApp.Api\\ProductApp.Api.csproj",
         "projectName": "ProductApp.Api",
-        "projectPath": "C:\\Users\\aleks\\Source\\ProductApp\\src\\ProductApp.Api\\ProductApp.Api.csproj",
+        "projectPath": "C:\\Users\\aleks\\Source\\UserManagement\\src\\ProductApp.Api\\ProductApp.Api.csproj",
         "packagesPath": "C:\\Users\\aleks\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aleks\\Source\\ProductApp\\src\\ProductApp.Api\\obj\\",
+        "outputPath": "C:\\Users\\aleks\\Source\\UserManagement\\src\\ProductApp.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,11 +33,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\aleks\\Source\\ProductApp\\src\\ProductApp.Core\\ProductApp.Core.csproj": {
-                "projectPath": "C:\\Users\\aleks\\Source\\ProductApp\\src\\ProductApp.Core\\ProductApp.Core.csproj"
+              "C:\\Users\\aleks\\Source\\UserManagement\\src\\ProductApp.Core\\ProductApp.Core.csproj": {
+                "projectPath": "C:\\Users\\aleks\\Source\\UserManagement\\src\\ProductApp.Core\\ProductApp.Core.csproj"
               },
-              "C:\\Users\\aleks\\Source\\ProductApp\\src\\ProductApp.Infrastructure\\ProductApp.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\aleks\\Source\\ProductApp\\src\\ProductApp.Infrastructure\\ProductApp.Infrastructure.csproj"
+              "C:\\Users\\aleks\\Source\\UserManagement\\src\\ProductApp.Infrastructure\\ProductApp.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\aleks\\Source\\UserManagement\\src\\ProductApp.Infrastructure\\ProductApp.Infrastructure.csproj"
               }
             }
           }
@@ -99,14 +99,14 @@
         }
       }
     },
-    "C:\\Users\\aleks\\Source\\ProductApp\\src\\ProductApp.Core\\ProductApp.Core.csproj": {
+    "C:\\Users\\aleks\\Source\\UserManagement\\src\\ProductApp.Core\\ProductApp.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aleks\\Source\\ProductApp\\src\\ProductApp.Core\\ProductApp.Core.csproj",
+        "projectUniqueName": "C:\\Users\\aleks\\Source\\UserManagement\\src\\ProductApp.Core\\ProductApp.Core.csproj",
         "projectName": "ProductApp.Core",
-        "projectPath": "C:\\Users\\aleks\\Source\\ProductApp\\src\\ProductApp.Core\\ProductApp.Core.csproj",
+        "projectPath": "C:\\Users\\aleks\\Source\\UserManagement\\src\\ProductApp.Core\\ProductApp.Core.csproj",
         "packagesPath": "C:\\Users\\aleks\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aleks\\Source\\ProductApp\\src\\ProductApp.Core\\obj\\",
+        "outputPath": "C:\\Users\\aleks\\Source\\UserManagement\\src\\ProductApp.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -170,14 +170,14 @@
         }
       }
     },
-    "C:\\Users\\aleks\\Source\\ProductApp\\src\\ProductApp.Infrastructure\\ProductApp.Infrastructure.csproj": {
+    "C:\\Users\\aleks\\Source\\UserManagement\\src\\ProductApp.Infrastructure\\ProductApp.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aleks\\Source\\ProductApp\\src\\ProductApp.Infrastructure\\ProductApp.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\aleks\\Source\\UserManagement\\src\\ProductApp.Infrastructure\\ProductApp.Infrastructure.csproj",
         "projectName": "ProductApp.Infrastructure",
-        "projectPath": "C:\\Users\\aleks\\Source\\ProductApp\\src\\ProductApp.Infrastructure\\ProductApp.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\aleks\\Source\\UserManagement\\src\\ProductApp.Infrastructure\\ProductApp.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\aleks\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aleks\\Source\\ProductApp\\src\\ProductApp.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\aleks\\Source\\UserManagement\\src\\ProductApp.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -199,8 +199,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\aleks\\Source\\ProductApp\\src\\ProductApp.Core\\ProductApp.Core.csproj": {
-                "projectPath": "C:\\Users\\aleks\\Source\\ProductApp\\src\\ProductApp.Core\\ProductApp.Core.csproj"
+              "C:\\Users\\aleks\\Source\\UserManagement\\src\\ProductApp.Core\\ProductApp.Core.csproj": {
+                "projectPath": "C:\\Users\\aleks\\Source\\UserManagement\\src\\ProductApp.Core\\ProductApp.Core.csproj"
               }
             }
           }

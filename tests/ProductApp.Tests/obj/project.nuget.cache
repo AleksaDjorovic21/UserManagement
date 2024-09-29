@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ioadc9BVBh4=",
+  "dgSpecHash": "+ORTm/6tQa0=",
   "success": true,
-  "projectFilePath": "C:\\Users\\aleks\\Source\\ProductApp\\tests\\ProductApp.Tests\\ProductApp.Tests.csproj",
+  "projectFilePath": "C:\\Users\\aleks\\Source\\UserManagement\\tests\\ProductApp.Tests\\ProductApp.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\aleks\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\aleks\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

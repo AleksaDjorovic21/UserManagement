@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0muDs+OIyuk=",
+  "dgSpecHash": "SJvDIW1XxZo=",
   "success": true,
-  "projectFilePath": "C:\\Users\\aleks\\Source\\ProductApp\\src\\ProductApp.Api\\ProductApp.Api.csproj",
+  "projectFilePath": "C:\\Users\\aleks\\Source\\UserManagement\\src\\ProductApp.Api\\ProductApp.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\aleks\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\aleks\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
